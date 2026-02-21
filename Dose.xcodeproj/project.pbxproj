@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C46FE2284E356AB56C51DE /* DoseWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D491D718133287F56E41FFDD /* DoseWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		06059564E3B369707AE9A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403B3C537E4F18BEB2ACC334 /* Assets.xcassets */; };
+		0987680B89903DFD9CE88463 /* DosageMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23928684A6C8089E2FFF46 /* DosageMethod.swift */; };
+		0B0554D2420E50B528FBE2ED /* StrainPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC642C54EE9BAC40369F52 /* StrainPickerView.swift */; };
+		0EF56CFD8B88F53293384129 /* TBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F19E073540BC7F2782282 /* TBreak.swift */; };
+		12228AEF2779580E53A4A138 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68F372E61885D9700C884C /* EmptyStateView.swift */; };
+		14E54135BB94D0A89402BFDD /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87BD946643100C77D555538 /* Color+Extensions.swift */; };
+		1842D72FF030C3BFB5FF0E94 /* Strain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6A00BB0B30737C8159090 /* Strain.swift */; };
+		1B283CB41F4F1D5B1123C476 /* StrainType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F61D69ADD7C346C535C842 /* StrainType.swift */; };
+		1B2D0EA1C8A71CDA2DDB76F7 /* SessionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4519A33FA3E104A8AA55EC /* SessionRowView.swift */; };
+		1C3F1DAED810DA358A8E8B1E /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386964C863809DAE5D3A6BD /* StatCard.swift */; };
+		1DDD40C949EB22AAFCB300F8 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2603B0EE1A0AC164BA887A /* SharedContainer.swift */; };
+		1E51099554C4F9655C37B1D1 /* StrainFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6611752EFE2F493D7FE401 /* StrainFormView.swift */; };
+		205645AADBE257430F21FA00 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0028AD3E2D673E717772B2F /* StatsView.swift */; };
+		235033A22D70184CA7F5D0FC /* TodaySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4002DF1206711932E39635 /* TodaySummaryView.swift */; };
+		241167116392A78FB8454D0C /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 2897E411F1BC0055758DD150 /* Preview Content */; };
+		24E166993107DA1CF9D3155A /* DoseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF033DEB3D802A09C00BF8 /* DoseApp.swift */; };
+		24F9E19937DC4C22FA3C1965 /* AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4E635A87EA0669058B601 /* AccentColor.swift */; };
+		295F03AD74339B70F689FE51 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285116142D4E661D8D43A073 /* NotificationService.swift */; };
+		368E2E2F8DFDC506AA12C671 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D56BF2545B5440D79193DC /* ExportService.swift */; };
+		36B644E50CBC4641AB52D7FD /* StrainType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F61D69ADD7C346C535C842 /* StrainType.swift */; };
+		4189D1A9BB5ABB87F77AEFC2 /* TBreak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F19E073540BC7F2782282 /* TBreak.swift */; };
+		4394BC23BE89606FEE8E3A4B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB6C4FF874CF4069AD330E5 /* ThemeManager.swift */; };
+		4DA0EE7CEE480A105795F8FE /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED50CC53EFB00C99A810A4 /* ThemePickerView.swift */; };
+		4E499EC54041040D105D39E2 /* StrainEffectivenessChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B63BDBEAA5659DFB74792EF /* StrainEffectivenessChart.swift */; };
+		5466DEBF7D364FEE836D89FB /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614280EF62EFE1B372827E6C /* ExportView.swift */; };
+		549FEA00DFF606756C5F49C8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434AC0AF55D70CA335B0BFA2 /* DashboardView.swift */; };
+		57F3811D879CAACDA6298845 /* QuickLogSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29D780C65A2548D651C9EF9 /* QuickLogSheet.swift */; };
+		5EB83768AE9AC0C2F83A51AE /* PersistenceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8F82E6E5B3476085F769F /* PersistenceConfiguration.swift */; };
+		5EF09F7B4BBC68358BCBD6E7 /* PersistenceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8F82E6E5B3476085F769F /* PersistenceConfiguration.swift */; };
+		64428959C6529E35E585EBE2 /* StrainLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEB68C2170FB961707DEB1 /* StrainLibraryView.swift */; };
+		66065EC17E1EB67D055A05BC /* DoseWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947D3D1DFEE18C58CFD07C9 /* DoseWidgetBundle.swift */; };
+		68BECBDFAE0A3EB6202A6F0D /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB3CC2BAF83108CD0EC1C58 /* AccentButton.swift */; };
+		6E335F76B12DE3D3121E7DF0 /* TBreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497F4242F371752421F8BEE /* TBreakView.swift */; };
+		74894733D8A1E6E39042F5CE /* DosageMethodPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839E456C06F21F91E51FE27 /* DosageMethodPicker.swift */; };
+		782E122F52F84B7D94731F35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632385244B476013FBBCBBC /* ContentView.swift */; };
+		7D93E9D674890E3ED9C11CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 869322437CABA09FDE5DBD5E /* Assets.xcassets */; };
+		87798284F83F91C1477384B4 /* DailySummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8701D0D453DFB1E67F814A1 /* DailySummaryView.swift */; };
+		8862961FB3D5BE8C08EF14C1 /* ConsumptionTrendChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7FEEB49521D2AC46EDF01 /* ConsumptionTrendChart.swift */; };
+		8DD2FA69F6190223F33A99E1 /* PainEntryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DF4BD58C29927C7A48F6D /* PainEntryFormView.swift */; };
+		96ED3A673537B151D0693B56 /* SessionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC920EA6AFF0BAD1FF4F13A4 /* SessionCardView.swift */; };
+		99FEEF38FF73BAF114B5B36A /* TBreakTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C36D3A5BEF4B517D9E40DE /* TBreakTimelineView.swift */; };
+		A02ADF8DE2EB34BED9C0B6D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20707AF60EA4D4E36BACD6E /* Session.swift */; };
+		A330B1F2E98EA8816771F5DF /* PainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07005A28D68A97E0AE2F42 /* PainEntry.swift */; };
+		A87469538F40E911DCD9F7BD /* DoseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CC9F83D84BABEBC9F2D908 /* DoseWidget.swift */; };
+		A8D10ACA659476C0A9A28938 /* MethodEffectivenessChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921F313C74C57995E537B6AE /* MethodEffectivenessChart.swift */; };
+		AB6736B9EC77B2849DAF34AC /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87BD946643100C77D555538 /* Color+Extensions.swift */; };
+		ADF0A4CA0676DF607DD19AB4 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20707AF60EA4D4E36BACD6E /* Session.swift */; };
+		B455C3A3B6420BB677F04B52 /* TBreakStreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C40E94DF2410887DFA233 /* TBreakStreakView.swift */; };
+		B57298D2DD6F47D96383F005 /* PainJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F1A601EEB6F7711D5C264 /* PainJournalView.swift */; };
+		C420D7CAAEDEF04F8C8AA369 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B1F4A3B03918A77E1239C0 /* SessionListView.swift */; };
+		C834E3C0464386E921192B7F /* DosageMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D23928684A6C8089E2FFF46 /* DosageMethod.swift */; };
+		C8B871F0CA723C2D61684958 /* PainScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C700BD3511FF6886EB76094 /* PainScaleView.swift */; };
+		CA492F57C9A80CD1D2A82FDD /* EditSessionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF96F912B07BD85D4587654 /* EditSessionSheet.swift */; };
+		D14E04741730F12FA4B9042E /* PainScaleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1174ECD3DE3F263B6D239C9B /* PainScaleSlider.swift */; };
+		D6989FF9672C6A5780AAD5CF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D6D548BE2F0539BA3FEF2 /* AboutView.swift */; };
+		D72BA05CE53A11686023D0CC /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6DDF43EDF8544FD9134B3 /* DateFormatters.swift */; };
+		DA6D36D4CF167C6FAA925682 /* AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E4E635A87EA0669058B601 /* AccentColor.swift */; };
+		E56993F4576D5B814F9ACDE6 /* PainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07005A28D68A97E0AE2F42 /* PainEntry.swift */; };
+		ECA3CC28A3D035E4A6CE830C /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B3F5985E67694845C00E0 /* SessionDetailView.swift */; };
+		ECF71A74170D4AF842739C47 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA9E45CCFEA370B3DE6CDC /* SettingsView.swift */; };
+		EDD1E76D7F818723F4ABEC64 /* Strain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB6A00BB0B30737C8159090 /* Strain.swift */; };
+		F5D9AFAEE3D346CA376C30C2 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2603B0EE1A0AC164BA887A /* SharedContainer.swift */; };
+		FF6CF8C7A72614641ED625FA /* StrainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2143EFA96C89151189AFF /* StrainDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		627A213B2C63AB4AD814C04D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFD5A1FE0EB46C313D480984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91F1CC649E92BD8B1CD77EA;
+			remoteInfo = DoseWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		120509D956F353029E6D3B58 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05C46FE2284E356AB56C51DE /* DoseWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		005F19E073540BC7F2782282 /* TBreak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBreak.swift; sourceTree = "<group>"; };
+		1174ECD3DE3F263B6D239C9B /* PainScaleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainScaleSlider.swift; sourceTree = "<group>"; };
+		1632385244B476013FBBCBBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19B6DDF43EDF8544FD9134B3 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		1D4519A33FA3E104A8AA55EC /* SessionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRowView.swift; sourceTree = "<group>"; };
+		285116142D4E661D8D43A073 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2897E411F1BC0055758DD150 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Preview Content"; path = "Dose/Preview Content"; sourceTree = SOURCE_ROOT; };
+		2CB3CC2BAF83108CD0EC1C58 /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
+		30B8F82E6E5B3476085F769F /* PersistenceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceConfiguration.swift; sourceTree = "<group>"; };
+		35F61D69ADD7C346C535C842 /* StrainType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainType.swift; sourceTree = "<group>"; };
+		3B63BDBEAA5659DFB74792EF /* StrainEffectivenessChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainEffectivenessChart.swift; sourceTree = "<group>"; };
+		403B3C537E4F18BEB2ACC334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		434AC0AF55D70CA335B0BFA2 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4B4002DF1206711932E39635 /* TodaySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySummaryView.swift; sourceTree = "<group>"; };
+		4C07005A28D68A97E0AE2F42 /* PainEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainEntry.swift; sourceTree = "<group>"; };
+		4D6C40E94DF2410887DFA233 /* TBreakStreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBreakStreakView.swift; sourceTree = "<group>"; };
+		510B3F5985E67694845C00E0 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		51CC9F83D84BABEBC9F2D908 /* DoseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseWidget.swift; sourceTree = "<group>"; };
+		5A9DF4BD58C29927C7A48F6D /* PainEntryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainEntryFormView.swift; sourceTree = "<group>"; };
+		5C700BD3511FF6886EB76094 /* PainScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainScaleView.swift; sourceTree = "<group>"; };
+		5D23928684A6C8089E2FFF46 /* DosageMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageMethod.swift; sourceTree = "<group>"; };
+		614280EF62EFE1B372827E6C /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		691F1A601EEB6F7711D5C264 /* PainJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainJournalView.swift; sourceTree = "<group>"; };
+		71B1F4A3B03918A77E1239C0 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		7839E456C06F21F91E51FE27 /* DosageMethodPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageMethodPicker.swift; sourceTree = "<group>"; };
+		7D6611752EFE2F493D7FE401 /* StrainFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainFormView.swift; sourceTree = "<group>"; };
+		81D2143EFA96C89151189AFF /* StrainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainDetailView.swift; sourceTree = "<group>"; };
+		84C36D3A5BEF4B517D9E40DE /* TBreakTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBreakTimelineView.swift; sourceTree = "<group>"; };
+		869322437CABA09FDE5DBD5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87FC642C54EE9BAC40369F52 /* StrainPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainPickerView.swift; sourceTree = "<group>"; };
+		8947D3D1DFEE18C58CFD07C9 /* DoseWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseWidgetBundle.swift; sourceTree = "<group>"; };
+		8BF96F912B07BD85D4587654 /* EditSessionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSessionSheet.swift; sourceTree = "<group>"; };
+		8CB6C4FF874CF4069AD330E5 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		8DB6A00BB0B30737C8159090 /* Strain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strain.swift; sourceTree = "<group>"; };
+		8F9214C8865CB5BEDC969AC8 /* Dose.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dose.entitlements; sourceTree = "<group>"; };
+		921F313C74C57995E537B6AE /* MethodEffectivenessChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodEffectivenessChart.swift; sourceTree = "<group>"; };
+		9386964C863809DAE5D3A6BD /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		94636DE3101D6EBBB0BF80BD /* DoseWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DoseWidgetExtension.entitlements; sourceTree = "<group>"; };
+		9B68F372E61885D9700C884C /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		A0028AD3E2D673E717772B2F /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		A6ED50CC53EFB00C99A810A4 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
+		A87BD946643100C77D555538 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		B1D56BF2545B5440D79193DC /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		B6E4E635A87EA0669058B601 /* AccentColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColor.swift; sourceTree = "<group>"; };
+		B8701D0D453DFB1E67F814A1 /* DailySummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummaryView.swift; sourceTree = "<group>"; };
+		BC920EA6AFF0BAD1FF4F13A4 /* SessionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCardView.swift; sourceTree = "<group>"; };
+		C29D780C65A2548D651C9EF9 /* QuickLogSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogSheet.swift; sourceTree = "<group>"; };
+		C3EBB199DE6DF1554DCC6A41 /* Dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C497F4242F371752421F8BEE /* TBreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBreakView.swift; sourceTree = "<group>"; };
+		CD4D6D548BE2F0539BA3FEF2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		D491D718133287F56E41FFDD /* DoseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DoseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EADA9E45CCFEA370B3DE6CDC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F20707AF60EA4D4E36BACD6E /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F4D7FEEB49521D2AC46EDF01 /* ConsumptionTrendChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionTrendChart.swift; sourceTree = "<group>"; };
+		FA2603B0EE1A0AC164BA887A /* SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
+		FDFEB68C2170FB961707DEB1 /* StrainLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrainLibraryView.swift; sourceTree = "<group>"; };
+		FFCF033DEB3D802A09C00BF8 /* DoseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01C7CA9C351CD7ECA8C2855B /* Dose */ = {
+			isa = PBXGroup;
+			children = (
+				403B3C537E4F18BEB2ACC334 /* Assets.xcassets */,
+				1632385244B476013FBBCBBC /* ContentView.swift */,
+				8F9214C8865CB5BEDC969AC8 /* Dose.entitlements */,
+				FFCF033DEB3D802A09C00BF8 /* DoseApp.swift */,
+				2897E411F1BC0055758DD150 /* Preview Content */,
+				169EE8730A0E17ABDFC61879 /* Models */,
+				A1900AD2B319EF417A538497 /* Services */,
+				98E115AF475DCF0B8FA41B26 /* Theme */,
+				CBA9FE122A220B82F5B42907 /* Utilities */,
+				D5D12F79D98C69721CE11C66 /* Views */,
+			);
+			path = Dose;
+			sourceTree = "<group>";
+		};
+		0337214F61B4DF1A6FE7ED5C /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				434AC0AF55D70CA335B0BFA2 /* DashboardView.swift */,
+				8BF96F912B07BD85D4587654 /* EditSessionSheet.swift */,
+				C29D780C65A2548D651C9EF9 /* QuickLogSheet.swift */,
+				BC920EA6AFF0BAD1FF4F13A4 /* SessionCardView.swift */,
+				4B4002DF1206711932E39635 /* TodaySummaryView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		078765E5FAC84B4D5ABD7AC3 /* TBreak */ = {
+			isa = PBXGroup;
+			children = (
+				4D6C40E94DF2410887DFA233 /* TBreakStreakView.swift */,
+				84C36D3A5BEF4B517D9E40DE /* TBreakTimelineView.swift */,
+				C497F4242F371752421F8BEE /* TBreakView.swift */,
+			);
+			path = TBreak;
+			sourceTree = "<group>";
+		};
+		169EE8730A0E17ABDFC61879 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D23928684A6C8089E2FFF46 /* DosageMethod.swift */,
+				4C07005A28D68A97E0AE2F42 /* PainEntry.swift */,
+				F20707AF60EA4D4E36BACD6E /* Session.swift */,
+				8DB6A00BB0B30737C8159090 /* Strain.swift */,
+				35F61D69ADD7C346C535C842 /* StrainType.swift */,
+				005F19E073540BC7F2782282 /* TBreak.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CF0CF19FA499846DC632066 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D6D548BE2F0539BA3FEF2 /* AboutView.swift */,
+				614280EF62EFE1B372827E6C /* ExportView.swift */,
+				EADA9E45CCFEA370B3DE6CDC /* SettingsView.swift */,
+				A6ED50CC53EFB00C99A810A4 /* ThemePickerView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		78A8CB1164E9C5A2FB89CE30 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CB3CC2BAF83108CD0EC1C58 /* AccentButton.swift */,
+				7839E456C06F21F91E51FE27 /* DosageMethodPicker.swift */,
+				9B68F372E61885D9700C884C /* EmptyStateView.swift */,
+				1174ECD3DE3F263B6D239C9B /* PainScaleSlider.swift */,
+				9386964C863809DAE5D3A6BD /* StatCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		78AEBBA487B0F0F8EC8AB04C /* DoseWidget */ = {
+			isa = PBXGroup;
+			children = (
+				869322437CABA09FDE5DBD5E /* Assets.xcassets */,
+				51CC9F83D84BABEBC9F2D908 /* DoseWidget.swift */,
+				8947D3D1DFEE18C58CFD07C9 /* DoseWidgetBundle.swift */,
+				94636DE3101D6EBBB0BF80BD /* DoseWidgetExtension.entitlements */,
+			);
+			path = DoseWidget;
+			sourceTree = "<group>";
+		};
+		7F23E2DD33E5DC8EB683972E /* PainJournal */ = {
+			isa = PBXGroup;
+			children = (
+				5A9DF4BD58C29927C7A48F6D /* PainEntryFormView.swift */,
+				691F1A601EEB6F7711D5C264 /* PainJournalView.swift */,
+				5C700BD3511FF6886EB76094 /* PainScaleView.swift */,
+			);
+			path = PainJournal;
+			sourceTree = "<group>";
+		};
+		83861ECA002E7E6FFF482FB3 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				510B3F5985E67694845C00E0 /* SessionDetailView.swift */,
+				71B1F4A3B03918A77E1239C0 /* SessionListView.swift */,
+				1D4519A33FA3E104A8AA55EC /* SessionRowView.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		98E115AF475DCF0B8FA41B26 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B6E4E635A87EA0669058B601 /* AccentColor.swift */,
+				A87BD946643100C77D555538 /* Color+Extensions.swift */,
+				8CB6C4FF874CF4069AD330E5 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9B97BD5738E35B9A14DF90A5 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				F4D7FEEB49521D2AC46EDF01 /* ConsumptionTrendChart.swift */,
+				B8701D0D453DFB1E67F814A1 /* DailySummaryView.swift */,
+				921F313C74C57995E537B6AE /* MethodEffectivenessChart.swift */,
+				A0028AD3E2D673E717772B2F /* StatsView.swift */,
+				3B63BDBEAA5659DFB74792EF /* StrainEffectivenessChart.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		A1900AD2B319EF417A538497 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1D56BF2545B5440D79193DC /* ExportService.swift */,
+				285116142D4E661D8D43A073 /* NotificationService.swift */,
+				FA2603B0EE1A0AC164BA887A /* SharedContainer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B904016DA770469CAF264EF2 /* Strains */ = {
+			isa = PBXGroup;
+			children = (
+				81D2143EFA96C89151189AFF /* StrainDetailView.swift */,
+				7D6611752EFE2F493D7FE401 /* StrainFormView.swift */,
+				FDFEB68C2170FB961707DEB1 /* StrainLibraryView.swift */,
+				87FC642C54EE9BAC40369F52 /* StrainPickerView.swift */,
+			);
+			path = Strains;
+			sourceTree = "<group>";
+		};
+		BB4EC32CE0F54FF0145520F2 = {
+			isa = PBXGroup;
+			children = (
+				01C7CA9C351CD7ECA8C2855B /* Dose */,
+				78AEBBA487B0F0F8EC8AB04C /* DoseWidget */,
+				F5FEA589315AFB7745BB1679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA9FE122A220B82F5B42907 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				19B6DDF43EDF8544FD9134B3 /* DateFormatters.swift */,
+				30B8F82E6E5B3476085F769F /* PersistenceConfiguration.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D5D12F79D98C69721CE11C66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78A8CB1164E9C5A2FB89CE30 /* Components */,
+				0337214F61B4DF1A6FE7ED5C /* Dashboard */,
+				7F23E2DD33E5DC8EB683972E /* PainJournal */,
+				83861ECA002E7E6FFF482FB3 /* Sessions */,
+				1CF0CF19FA499846DC632066 /* Settings */,
+				9B97BD5738E35B9A14DF90A5 /* Stats */,
+				B904016DA770469CAF264EF2 /* Strains */,
+				078765E5FAC84B4D5ABD7AC3 /* TBreak */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5FEA589315AFB7745BB1679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3EBB199DE6DF1554DCC6A41 /* Dose.app */,
+				D491D718133287F56E41FFDD /* DoseWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91F1CC649E92BD8B1CD77EA /* DoseWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43953D20CAEBE8AF4ACA6BF6 /* Build configuration list for PBXNativeTarget "DoseWidgetExtension" */;
+			buildPhases = (
+				F3916EE21E6799885D2A308C /* Sources */,
+				9A4CCF2BBAF24A97C74014ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoseWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DoseWidgetExtension;
+			productReference = D491D718133287F56E41FFDD /* DoseWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C67EF3CBC1F9EE301643B9D6 /* Dose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293717921EA0DBF8C116F6E6 /* Build configuration list for PBXNativeTarget "Dose" */;
+			buildPhases = (
+				4A944B47B78DE2D9EEC9C454 /* Sources */,
+				89B7D9972694678A087E9CC3 /* Resources */,
+				120509D956F353029E6D3B58 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D2C965162B8CE1B3E434712 /* PBXTargetDependency */,
+			);
+			name = Dose;
+			packageProductDependencies = (
+			);
+			productName = Dose;
+			productReference = C3EBB199DE6DF1554DCC6A41 /* Dose.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFD5A1FE0EB46C313D480984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+			};
+			buildConfigurationList = 171111CA47A4C48088F6F69A /* Build configuration list for PBXProject "Dose" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BB4EC32CE0F54FF0145520F2;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C67EF3CBC1F9EE301643B9D6 /* Dose */,
+				A91F1CC649E92BD8B1CD77EA /* DoseWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89B7D9972694678A087E9CC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06059564E3B369707AE9A9D5 /* Assets.xcassets in Resources */,
+				241167116392A78FB8454D0C /* Preview Content in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4CCF2BBAF24A97C74014ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D93E9D674890E3ED9C11CAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A944B47B78DE2D9EEC9C454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6989FF9672C6A5780AAD5CF /* AboutView.swift in Sources */,
+				68BECBDFAE0A3EB6202A6F0D /* AccentButton.swift in Sources */,
+				DA6D36D4CF167C6FAA925682 /* AccentColor.swift in Sources */,
+				AB6736B9EC77B2849DAF34AC /* Color+Extensions.swift in Sources */,
+				8862961FB3D5BE8C08EF14C1 /* ConsumptionTrendChart.swift in Sources */,
+				782E122F52F84B7D94731F35 /* ContentView.swift in Sources */,
+				87798284F83F91C1477384B4 /* DailySummaryView.swift in Sources */,
+				549FEA00DFF606756C5F49C8 /* DashboardView.swift in Sources */,
+				D72BA05CE53A11686023D0CC /* DateFormatters.swift in Sources */,
+				C834E3C0464386E921192B7F /* DosageMethod.swift in Sources */,
+				74894733D8A1E6E39042F5CE /* DosageMethodPicker.swift in Sources */,
+				24E166993107DA1CF9D3155A /* DoseApp.swift in Sources */,
+				CA492F57C9A80CD1D2A82FDD /* EditSessionSheet.swift in Sources */,
+				12228AEF2779580E53A4A138 /* EmptyStateView.swift in Sources */,
+				368E2E2F8DFDC506AA12C671 /* ExportService.swift in Sources */,
+				5466DEBF7D364FEE836D89FB /* ExportView.swift in Sources */,
+				A8D10ACA659476C0A9A28938 /* MethodEffectivenessChart.swift in Sources */,
+				295F03AD74339B70F689FE51 /* NotificationService.swift in Sources */,
+				E56993F4576D5B814F9ACDE6 /* PainEntry.swift in Sources */,
+				8DD2FA69F6190223F33A99E1 /* PainEntryFormView.swift in Sources */,
+				B57298D2DD6F47D96383F005 /* PainJournalView.swift in Sources */,
+				D14E04741730F12FA4B9042E /* PainScaleSlider.swift in Sources */,
+				C8B871F0CA723C2D61684958 /* PainScaleView.swift in Sources */,
+				5EF09F7B4BBC68358BCBD6E7 /* PersistenceConfiguration.swift in Sources */,
+				57F3811D879CAACDA6298845 /* QuickLogSheet.swift in Sources */,
+				A02ADF8DE2EB34BED9C0B6D3 /* Session.swift in Sources */,
+				96ED3A673537B151D0693B56 /* SessionCardView.swift in Sources */,
+				ECA3CC28A3D035E4A6CE830C /* SessionDetailView.swift in Sources */,
+				C420D7CAAEDEF04F8C8AA369 /* SessionListView.swift in Sources */,
+				1B2D0EA1C8A71CDA2DDB76F7 /* SessionRowView.swift in Sources */,
+				ECF71A74170D4AF842739C47 /* SettingsView.swift in Sources */,
+				1DDD40C949EB22AAFCB300F8 /* SharedContainer.swift in Sources */,
+				1C3F1DAED810DA358A8E8B1E /* StatCard.swift in Sources */,
+				205645AADBE257430F21FA00 /* StatsView.swift in Sources */,
+				EDD1E76D7F818723F4ABEC64 /* Strain.swift in Sources */,
+				FF6CF8C7A72614641ED625FA /* StrainDetailView.swift in Sources */,
+				4E499EC54041040D105D39E2 /* StrainEffectivenessChart.swift in Sources */,
+				1E51099554C4F9655C37B1D1 /* StrainFormView.swift in Sources */,
+				64428959C6529E35E585EBE2 /* StrainLibraryView.swift in Sources */,
+				0B0554D2420E50B528FBE2ED /* StrainPickerView.swift in Sources */,
+				36B644E50CBC4641AB52D7FD /* StrainType.swift in Sources */,
+				4189D1A9BB5ABB87F77AEFC2 /* TBreak.swift in Sources */,
+				B455C3A3B6420BB677F04B52 /* TBreakStreakView.swift in Sources */,
+				99FEEF38FF73BAF114B5B36A /* TBreakTimelineView.swift in Sources */,
+				6E335F76B12DE3D3121E7DF0 /* TBreakView.swift in Sources */,
+				4394BC23BE89606FEE8E3A4B /* ThemeManager.swift in Sources */,
+				4DA0EE7CEE480A105795F8FE /* ThemePickerView.swift in Sources */,
+				235033A22D70184CA7F5D0FC /* TodaySummaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3916EE21E6799885D2A308C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F9E19937DC4C22FA3C1965 /* AccentColor.swift in Sources */,
+				14E54135BB94D0A89402BFDD /* Color+Extensions.swift in Sources */,
+				0987680B89903DFD9CE88463 /* DosageMethod.swift in Sources */,
+				A87469538F40E911DCD9F7BD /* DoseWidget.swift in Sources */,
+				66065EC17E1EB67D055A05BC /* DoseWidgetBundle.swift in Sources */,
+				A330B1F2E98EA8816771F5DF /* PainEntry.swift in Sources */,
+				5EB83768AE9AC0C2F83A51AE /* PersistenceConfiguration.swift in Sources */,
+				ADF0A4CA0676DF607DD19AB4 /* Session.swift in Sources */,
+				F5D9AFAEE3D346CA376C30C2 /* SharedContainer.swift in Sources */,
+				1842D72FF030C3BFB5FF0E94 /* Strain.swift in Sources */,
+				1B283CB41F4F1D5B1123C476 /* StrainType.swift in Sources */,
+				0EF56CFD8B88F53293384129 /* TBreak.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D2C965162B8CE1B3E434712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91F1CC649E92BD8B1CD77EA /* DoseWidgetExtension */;
+			targetProxy = 627A213B2C63AB4AD814C04D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015CC5830A1750D7C0091941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DoseWidget/DoseWidgetExtension.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W56A9FP3G;
+				INFOPLIST_FILE = DoseWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonleon.Dose.DoseWidget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FD54AE3CAD3A9BB7ADAEF6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		381BA2402C1D59760C9A4AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DoseWidget/DoseWidgetExtension.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W56A9FP3G;
+				INFOPLIST_FILE = DoseWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonleon.Dose.DoseWidget;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		389DFA995DF68B2811BF32CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dose/Dose.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W56A9FP3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Dose/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonleon.Dose;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5CD29AD5077EDDFA22485F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dose/Dose.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2W56A9FP3G;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Dose/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonleon.Dose;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDA4484B04D074C442760256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171111CA47A4C48088F6F69A /* Build configuration list for PBXProject "Dose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA4484B04D074C442760256 /* Debug */,
+				0FD54AE3CAD3A9BB7ADAEF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		293717921EA0DBF8C116F6E6 /* Build configuration list for PBXNativeTarget "Dose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				389DFA995DF68B2811BF32CB /* Debug */,
+				C5CD29AD5077EDDFA22485F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43953D20CAEBE8AF4ACA6BF6 /* Build configuration list for PBXNativeTarget "DoseWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015CC5830A1750D7C0091941 /* Debug */,
+				381BA2402C1D59760C9A4AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFD5A1FE0EB46C313D480984 /* Project object */;
+}
