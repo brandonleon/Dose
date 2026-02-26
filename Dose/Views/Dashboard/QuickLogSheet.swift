@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct QuickLogSheet: View {
     @Environment(\.modelContext) private var modelContext
@@ -99,5 +100,6 @@ struct QuickLogSheet: View {
         )
         modelContext.insert(session)
         try? modelContext.save()
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

@@ -21,17 +21,21 @@ struct DoseTimelineProvider: TimelineProvider {
         DoseEntry(date: .now, sessionCountToday: 3, lastMethodRaw: "flower", lastStrainName: nil, accentColorHex: "#33C778")
     }
 
-    func getSnapshot(in context: Context, completion: @escaping @Sendable (DoseEntry) -> Void) {
-        let entry = makeEntry()
-        completion(entry)
+    nonisolated func getSnapshot(in context: Context, completion: @escaping @Sendable (DoseEntry) -> Void) {
+        Task { @MainActor in
+            completion(makeEntry())
+        }
     }
 
-    func getTimeline(in context: Context, completion: @escaping @Sendable (Timeline<DoseEntry>) -> Void) {
-        let entry = makeEntry()
-        let nextUpdate = Calendar.current.date(byAdding: .minute, value: 30, to: .now) ?? .now
-        completion(Timeline(entries: [entry], policy: .after(nextUpdate)))
+    nonisolated func getTimeline(in context: Context, completion: @escaping @Sendable (Timeline<DoseEntry>) -> Void) {
+        Task { @MainActor in
+            let entry = makeEntry()
+            let nextUpdate = Calendar.current.date(byAdding: .minute, value: 30, to: .now) ?? .now
+            completion(Timeline(entries: [entry], policy: .after(nextUpdate)))
+        }
     }
 
+    @MainActor
     private func makeEntry() -> DoseEntry {
         let defaults = UserDefaults(suiteName: SharedContainer.appGroupIdentifier)
         let accentRaw = defaults?.string(forKey: "dose_accent_color") ?? "emerald"
