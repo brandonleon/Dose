@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct EditSessionSheet: View {
     @Environment(\.modelContext) private var modelContext
@@ -117,5 +118,6 @@ struct EditSessionSheet: View {
         session.notes = notes
         session.strain = selectedStrain
         try? modelContext.save()
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

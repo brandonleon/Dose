@@ -1,5 +1,6 @@
 import SwiftUI
 import SwiftData
+import WidgetKit
 
 struct DashboardView: View {
     @Environment(\.modelContext) private var modelContext
@@ -102,6 +103,7 @@ struct DashboardView: View {
                 if let session = sessionToDelete {
                     modelContext.delete(session)
                     try? modelContext.save()
+                    WidgetCenter.shared.reloadAllTimelines()
                 }
                 sessionToDelete = nil
             }
@@ -117,5 +119,6 @@ struct DashboardView: View {
         let session = Session(dosageMethod: method)
         modelContext.insert(session)
         try? modelContext.save()
+        WidgetCenter.shared.reloadAllTimelines()
     }
 }

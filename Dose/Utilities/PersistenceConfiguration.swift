@@ -8,7 +8,7 @@ enum PersistenceConfiguration {
         TBreak.self
     ])
 
-    static var sharedModelContainer: ModelContainer {
+    static let sharedModelContainer: ModelContainer = {
         let config = ModelConfiguration(
             schema: schema,
             url: SharedContainer.containerURL.appending(path: "Dose.store"),
@@ -19,5 +19,5 @@ enum PersistenceConfiguration {
         } catch {
             fatalError("Failed to create ModelContainer: \(error)")
         }
-    }
+    }()
 }
