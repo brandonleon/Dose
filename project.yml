@@ -42,6 +42,11 @@ targets:
         ENABLE_PREVIEWS: YES
     entitlements:
       path: Dose/Dose.entitlements
+    capabilities:
+      iCloud:
+        cloudKit: true
+        iCloudContainers:
+          - iCloud.com.brandonleon.Dose
     dependencies:
       - target: DoseWidgetExtension
     info:

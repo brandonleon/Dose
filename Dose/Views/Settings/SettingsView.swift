@@ -26,6 +26,9 @@ struct SettingsView: View {
                 NavigationLink("Export Data") {
                     ExportView()
                 }
+                NavigationLink("Data Storage") {
+                    StorageInfoView()
+                }
             }
 
             Section("Strain Library") {
