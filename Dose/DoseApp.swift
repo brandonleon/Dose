@@ -4,6 +4,7 @@ import SwiftData
 @main
 struct DoseApp: App {
     @StateObject private var themeManager = ThemeManager()
+    @StateObject private var proManager = ProManager()
     @State private var showQuickLog = false
 
     // Resolved on every launch from saved preference; nil only on very first launch.
@@ -17,6 +18,7 @@ struct DoseApp: App {
             if let container = modelContainer {
                 ContentView(showQuickLog: $showQuickLog)
                     .environmentObject(themeManager)
+                    .environmentObject(proManager)
                     .preferredColorScheme(.dark)
                     .modelContainer(container)
                     .onOpenURL { url in

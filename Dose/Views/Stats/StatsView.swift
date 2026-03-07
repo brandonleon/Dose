@@ -3,10 +3,12 @@ import SwiftData
 
 struct StatsView: View {
     @EnvironmentObject private var themeManager: ThemeManager
+    @EnvironmentObject private var proManager: ProManager
     @Query(sort: \Session.timestamp, order: .reverse) private var sessions: [Session]
     @Query(sort: \PainEntry.timestamp, order: .reverse) private var painEntries: [PainEntry]
 
     @State private var dateRange: DateRange = .month
+    @State private var showUpgrade = false
 
     enum DateRange: String, CaseIterable {
         case week = "Week"
@@ -14,6 +16,13 @@ struct StatsView: View {
         case threeMonths = "3 Mo"
         case year = "Year"
         case all = "All"
+
+        var requiresPro: Bool {
+            switch self {
+            case .week, .month: return false
+            case .threeMonths, .year, .all: return true
+            }
+        }
 
         var startDate: Date? {
             let cal = Calendar.current
@@ -28,25 +37,40 @@ struct StatsView: View {
     }
 
     private var filteredSessions: [Session] {
-        guard let start = dateRange.startDate else { return sessions }
-        return sessions.filter { $0.timestamp >= start }
+        let base = proManager.isPro ? sessions : sessions.filter { $0.timestamp >= ProManager.freeHistoryStart }
+        guard let start = dateRange.startDate else { return base }
+        return base.filter { $0.timestamp >= start }
     }
 
     private var filteredPainEntries: [PainEntry] {
-        guard let start = dateRange.startDate else { return painEntries }
-        return painEntries.filter { $0.timestamp >= start }
+        let base = proManager.isPro ? painEntries : painEntries.filter { $0.timestamp >= ProManager.freeHistoryStart }
+        guard let start = dateRange.startDate else { return base }
+        return base.filter { $0.timestamp >= start }
     }
 
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
-                // Date range picker
+                // Date range picker — Pro ranges show a lock for free users
                 Picker("Range", selection: $dateRange) {
                     ForEach(DateRange.allCases, id: \.self) { range in
-                        Text(range.rawValue).tag(range)
+                        Label(
+                            range.rawValue,
+                            systemImage: (range.requiresPro && !proManager.isPro) ? "lock.fill" : ""
+                        )
+                        .tag(range)
                     }
                 }
                 .pickerStyle(.segmented)
+                .onChange(of: dateRange) { _, newValue in
+                    if newValue.requiresPro && !proManager.isPro {
+                        dateRange = .month
+                        showUpgrade = true
+                    }
+                }
+                .sheet(isPresented: $showUpgrade) {
+                    ProUpgradeView()
+                }
 
                 // Summary cards
                 HStack(spacing: 16) {

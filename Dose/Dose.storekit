@@ -1,0 +1,46 @@
+{
+  "identifier" : "DoseStoreKit",
+  "nonConsumableProducts" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "dose_pro_001",
+      "localizations" : [
+        {
+          "description" : "Unlock unlimited session history and long-term trend charts.",
+          "displayName" : "Dose Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.brandonleon.Dose.pro",
+      "referenceName" : "Dose Pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "dose_app",
+    "_developerTeamID" : "",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      }
+    ]
+  },
+  "version" : {
+    "major" : 1,
+    "minor" : 0,
+    "patch" : 0
+  }
+}

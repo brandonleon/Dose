@@ -3,9 +3,43 @@ import SwiftData
 
 struct SettingsView: View {
     @EnvironmentObject private var themeManager: ThemeManager
+    @EnvironmentObject private var proManager: ProManager
+    @State private var showUpgrade = false
 
     var body: some View {
         List {
+            if !proManager.isPro {
+                Section {
+                    Button {
+                        showUpgrade = true
+                    } label: {
+                        HStack(spacing: 14) {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 8)
+                                    .fill(themeManager.accentColor.opacity(0.15))
+                                    .frame(width: 36, height: 36)
+                                Image(systemName: "chart.line.uptrend.xyaxis")
+                                    .font(.system(size: 17))
+                                    .foregroundStyle(themeManager.accentColor)
+                            }
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("Upgrade to Dose Pro")
+                                    .font(.headline)
+                                    .foregroundStyle(.primary)
+                                Text("Unlimited history · Long-term charts")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+
             Section("Appearance") {
                 NavigationLink("Accent Color") {
                     ThemePickerView()
@@ -45,5 +79,8 @@ struct SettingsView: View {
         }
         .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $showUpgrade) {
+            ProUpgradeView()
+        }
     }
 }

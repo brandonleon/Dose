@@ -58,6 +58,25 @@ targets:
               - dose
             CFBundleURLName: "com.brandonleon.Dose"
 
+schemes:
+  Dose:
+    build:
+      targets:
+        Dose: all
+        DoseWidgetExtension: all
+    run:
+      config: Debug
+      storeKitConfiguration: Dose/Dose.storekit
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+
+targets:
   DoseWidgetExtension:
     type: app-extension
     platform: iOS
