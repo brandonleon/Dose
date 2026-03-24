@@ -23,7 +23,7 @@ struct ExportView: View {
                         "Export Sessions CSV",
                         item: sessionsCSV,
                         preview: SharePreview(
-                            "Dose Sessions Export",
+                            "Kanalog Sessions Export",
                             image: Image(systemName: "doc.text")
                         )
                     )
@@ -38,7 +38,7 @@ struct ExportView: View {
                         "Export Pain Entries CSV",
                         item: painCSV,
                         preview: SharePreview(
-                            "Dose Pain Journal Export",
+                            "Kanalog Pain Journal Export",
                             image: Image(systemName: "doc.text")
                         )
                     )

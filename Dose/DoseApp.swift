@@ -12,7 +12,7 @@ struct DoseApp: App {
                 .environmentObject(themeManager)
                 .preferredColorScheme(.dark)
                 .onOpenURL { url in
-                    if url.scheme == "dose" && url.host == "quicklog" {
+                    if url.scheme == "kanalog" && url.host == "quicklog" {
                         showQuickLog = true
                     }
                 }

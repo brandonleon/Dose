@@ -35,7 +35,7 @@ struct SettingsView: View {
             }
 
             Section("About") {
-                NavigationLink("About Dose") {
+                NavigationLink("About Kanalog") {
                     AboutView()
                 }
             }

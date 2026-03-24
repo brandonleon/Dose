@@ -23,7 +23,7 @@
 			<string>com.brandonleon.Dose</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>dose</string>
+				<string>kanalog</string>
 			</array>
 		</dict>
 	</array>

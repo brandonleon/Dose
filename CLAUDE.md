@@ -1,13 +1,13 @@
-# Dose — Claude Code Instructions
+# Kanalog — Claude Code Instructions
 
 ## Project Overview
 
-**Dose** is an iOS app for tracking cannabis consumption and its effect on back pain. Built with SwiftUI + SwiftData targeting iOS 17+, with a WidgetKit extension for home screen glanceability.
+**Kanalog** is an iOS app for tracking cannabis consumption and its effect on back pain. Built with SwiftUI + SwiftData targeting iOS 17+, with a WidgetKit extension for home screen glanceability.
 
 - **Bundle ID**: `com.brandonleon.Dose`
 - **Widget Bundle ID**: `com.brandonleon.Dose.DoseWidget`
 - **App Group**: `group.com.brandonleon.Dose` (shared between app and widget)
-- **URL Scheme**: `dose://` (e.g., `dose://quicklog` opens QuickLogSheet)
+- **URL Scheme**: `kanalog://` (e.g., `kanalog://quicklog` opens QuickLogSheet)
 - **Swift Version**: 6.0 (strict concurrency enabled)
 - **Deployment Target**: iOS 17.0
 - **Project Generator**: XcodeGen — edit `project.yml`, not `.pbxproj` directly
@@ -22,7 +22,7 @@ DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun xcodebuild ...
 
 # Build for simulator without code signing (CI-safe)
 DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcrun xcodebuild \
-  -scheme Dose -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO build
+  -scheme Kanalog -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO build
 ```
 
 - Xcode is at `/Applications/Xcode.app`
@@ -283,7 +283,7 @@ EmptyStateView(icon: "...", title: "...", message: "...")
 Always confirm destructive deletes via `.alert` or `.confirmationDialog` before calling `modelContext.delete()`.
 
 ### Deep Links
-`DoseApp.onOpenURL` handles `dose://quicklog`. If adding new deep link paths, handle them in the same `onOpenURL` modifier and document the scheme here.
+`DoseApp.onOpenURL` handles `kanalog://quicklog`. If adding new deep link paths, handle them in the same `onOpenURL` modifier and document the scheme here.
 
 ---
 
@@ -293,7 +293,7 @@ The widget (`DoseWidget`) is a `StaticConfiguration` supporting `.systemSmall` a
 
 1. Reads today's sessions from the **shared** `ModelContainer` (via `SharedContainer.containerURL`)
 2. Reads the accent color hex from shared `UserDefaults`
-3. Provides a deep link button (`dose://quicklog`) in the medium variant
+3. Provides a deep link button (`kanalog://quicklog`) in the medium variant
 4. Refreshes every 30 minutes
 
 When modifying models that the widget reads (Session, ThemeManager), ensure the widget's data access path still works via `SharedContainer`.

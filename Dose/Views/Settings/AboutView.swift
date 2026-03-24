@@ -12,7 +12,7 @@ struct AboutView: View {
                 .foregroundStyle(themeManager.accentColor)
 
             VStack(spacing: 4) {
-                Text("Dose")
+                Text("Kanalog")
                     .font(.largeTitle.weight(.bold))
                 Text("Cannabis Consumption Tracker")
                     .font(.subheadline)

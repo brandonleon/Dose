@@ -103,7 +103,7 @@ struct DoseWidgetEntryView: View {
             HStack {
                 Image(systemName: "leaf.fill")
                     .foregroundStyle(accent)
-                Text("Dose")
+                Text("Kanalog")
                     .font(.headline)
             }
 
@@ -137,7 +137,7 @@ struct DoseWidgetEntryView: View {
                         .foregroundStyle(.secondary)
                 }
                 Spacer()
-                Link(destination: URL(string: "dose://quicklog")!) {
+                Link(destination: URL(string: "kanalog://quicklog")!) {
                     Label("Quick Log", systemImage: "plus.circle.fill")
                         .font(.subheadline.bold())
                         .foregroundStyle(accent)
@@ -158,7 +158,7 @@ struct DoseWidget: Widget {
         StaticConfiguration(kind: kind, provider: DoseTimelineProvider()) { entry in
             DoseWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Dose Today")
+        .configurationDisplayName("Kanalog Today")
         .description("Today's session count with quick-log access.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }

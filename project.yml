@@ -1,4 +1,4 @@
-name: Dose
+name: Kanalog
 options:
   bundleIdPrefix: com.brandonleon
   deploymentTarget:
@@ -13,7 +13,7 @@ settings:
     DEVELOPMENT_TEAM: ""
 
 targets:
-  Dose:
+  Kanalog:
     type: application
     platform: iOS
     sources:
@@ -50,7 +50,7 @@ targets:
         UILaunchScreen: {}
         CFBundleURLTypes:
           - CFBundleURLSchemes:
-              - dose
+              - kanalog
             CFBundleURLName: "com.brandonleon.Dose"
 
   DoseWidgetExtension:
@@ -81,6 +81,6 @@ targets:
     info:
       path: DoseWidget/Info.plist
       properties:
-        CFBundleDisplayName: DoseWidget
+        CFBundleDisplayName: KanalogWidget
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension

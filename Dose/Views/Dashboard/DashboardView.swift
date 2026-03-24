@@ -88,7 +88,7 @@ struct DashboardView: View {
             }
             .padding(.horizontal)
         }
-        .navigationTitle("Dose")
+        .navigationTitle("Kanalog")
         .sheet(isPresented: $showQuickLog) {
             QuickLogSheet()
         }
